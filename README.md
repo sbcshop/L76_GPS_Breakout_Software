@@ -59,31 +59,43 @@ You have two options to use L76 GPS breakout
 
 - Now you will see device listed with COM port you can checkout in device manager
   
-  
+  <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/device_manager_comport.jpg" width="583" height="426">
 
+- To monitor GNSS data you can use any serial console terminal. For demo we have used XCTU which you can download from [official site here](https://hub.digi.com/support/products/xctu/).
+  
+  Select Tools > Serial console > configure
+
+  <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/xctu_1.jpg" width="600" height="451">
+
+- Follow Setting as shown with suitable com port selection, maybe different in your case
+
+  <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/xctu_2.jpg" width="600" height="452">
+
+- Close the connection, in some interval of time you will start getting Location data. Indicated by PPS Led blinking on breakout.
+  
+  <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/console_gps_readings.jpg" width="1150" height="609">
+
+  **Note**: _You may face issue getting location indoor due to satellite search, place GPS antenna outdoor._
+  
+  
 ### Interfacing with MCU
 - For using breakout with microcontrollers set selection option to UART using jumper as shown below,
   <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/uart_selection.jpg" width="389" height="275">
 
-  
 #### Interfacing Breakout with Pico/Pico W
-  
+- Once you have set selection jumper properly for UART access, so now you can either use header or 5pin SH connector to interface with microcontroller
+- Follow below pin connection for interfacing breakout with Pico/Pico W microcontroller
+    
   | Pico RP2040 | L76 Breakout | Function |
   |---|---|---|
   |GP4 (TXD1) | RX | Serial UART connection |
   |GP5 (RXD1) | TX  | Serial UART connection |
   |5V | 5V | Positive Supply connection |
   |GND | GND | Ground Supply connection |
-
-	
-#### Interfacing Breakout with Arduino 
-
-  | Arduino | L76 Breakout | Function |
-  |---|---|---|
-  |GP4 (TXD1) | RX | Serial UART connection |
-  |GP5 (RXD1) | TX  | Serial UART connection |
-  |5V | 5V | Positive Supply connection |
-  |GND | GND | Ground Supply connection |
+  
+- Once you are done with connection, now you can try gps examples available on Trekko Github => [Demo_GPS.py](https://github.com/sbcshop/Trekko_Software/blob/main/examples/Demo_GPS.py)
+- Make sure to save library file [trekkoGPS.py](https://github.com/sbcshop/Trekko_Software/blob/main/examples/trekkoGPS.py) to your Pico/Pico W
+- Everything all set then you can run script through IDE or save as main.py to your pico 
 
 
 #### Interfacing Breakout with Raspberry Pi
@@ -98,12 +110,23 @@ You have two options to use L76 GPS breakout
 
   Checkout [Github Here](https://github.com/sbcshop/GPS-Hat-for-Raspberry-Pi) for Working and Examples
 
+<!--
+#### Interfacing Breakout with Arduino 
+
+  | Arduino | L76 Breakout | Function |
+  |---|---|---|
+  |GP4 (TXD1) | RX | Serial UART connection |
+  |GP5 (RXD1) | TX  | Serial UART connection |
+  |5V | 5V | Positive Supply connection |
+  |GND | GND | Ground Supply connection |
+  
+-->
 
 ## Resources
   * [Schematic]()
   * [Hardware Files]()
   * [Step File]()
-  * [L76K Module Datasheet]()
+  * [L76K GNSS Documents]()
 
 
 ## Related Products
