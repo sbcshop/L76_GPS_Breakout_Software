@@ -38,25 +38,65 @@ This Github provides a getting started guide and other working details for the L
 <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/L76_GPS_Breakout_Pinouts.png">
 
 
-### Interfacing Details
-- Breakout Pins 
+- **_Breakout Pins_**
   
-  | Pico RP2040 | GPS L76 Module | Function |
+  | L76 Breakout | Function |
+  |---|---|
+  | RX | Serial Receive UART pin |
+  | TX | Serial Transmit UART pin |
+  | PPS | Pulse Per Second Signal pin |
+  | 5V | Positive 5V Supply | 
+  | GND | Supply Ground Pin |
+
+You have two options to use L76 GPS breakout 
+  1) Standalone using Type C to get live location on PC/Laptop directly
+  2) Interface with any Microcontroller using Serial UART pins
+
+### Breakout Directly with PC/Laptop 
+- For using breakout directly set selection option to USB using jumper as shown below and connect breakout to system using Type C,
+
+  <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/usb_selection.jpg" width="389" height="275">
+
+- Now you will see device listed with COM port you can checkout in device manager
+  
+  
+
+### Interfacing with MCU
+- For using breakout with microcontrollers set selection option to UART using jumper as shown below,
+  <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/uart_selection.jpg" width="389" height="275">
+
+  
+#### Interfacing Breakout with Pico/Pico W
+  
+  | Pico RP2040 | L76 Breakout | Function |
   |---|---|---|
   |GP4 (TXD1) | RX | Serial UART connection |
   |GP5 (RXD1) | TX  | Serial UART connection |
-  |3V3 | Positive 3.3V Supply | 
-  |GND | Supply Ground Pin |
+  |5V | 5V | Positive Supply connection |
+  |GND | GND | Ground Supply connection |
 
- 
-### Interfacing Breakout with Pico/Pico W
+	
+#### Interfacing Breakout with Arduino 
+
+  | Arduino | L76 Breakout | Function |
+  |---|---|---|
+  |GP4 (TXD1) | RX | Serial UART connection |
+  |GP5 (RXD1) | TX  | Serial UART connection |
+  |5V | 5V | Positive Supply connection |
+  |GND | GND | Ground Supply connection |
 
 
-### Interfacing Breakout with Arduino 
+#### Interfacing Breakout with Raspberry Pi
+  - Follow the connection below to interface breakout with Raspberry Pi
+    
+  | Raspberry Pi | L76 Breakout | Function |
+  |---|---|---|
+  |GP4 (TXD1) | RX | Serial UART connection |
+  |GP5 (RXD1) | TX  | Serial UART connection |
+  |5V | 5V | Positive Supply connection |
+  |GND | GND | Ground Supply connection |
 
-
-### Interfacing Breakout with Raspberry Pi
-  
+  Checkout [Github Here](https://github.com/sbcshop/GPS-Hat-for-Raspberry-Pi) for Working and Examples
 
 
 ## Resources
