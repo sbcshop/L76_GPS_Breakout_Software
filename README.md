@@ -101,15 +101,15 @@ You have two options to use L76 GPS breakout
 
 #### Interfacing Breakout with Raspberry Pi
   - Follow the connection below to interface breakout with Raspberry Pi
-    
-  | Raspberry Pi | L76 Breakout | Function |
-  |---|---|---|
-  |UART0 TX | RX | Serial UART connection |
-  |UART0 RX | TX  | Serial UART connection |
-  |5V | 5V | Positive Supply connection |
-  |GND | GND | Ground Supply connection |
 
-  Checkout [Github Here](https://github.com/sbcshop/GPS-Hat-for-Raspberry-Pi/tree/main#code) for Working examples.
+    | Raspberry Pi | L76 Breakout | Function |
+    |---|---|---|
+    |UART0 TX | RX | Serial UART connection |
+    |UART0 RX | TX  | Serial UART connection |
+    |5V | 5V | Positive Supply connection |
+    |GND | GND | Ground Supply connection |
+
+  - Checkout [Github Here](https://github.com/sbcshop/GPS-Hat-for-Raspberry-Pi/tree/main#code) for Working examples.
 
 <!--
 #### Interfacing Breakout with Arduino 
