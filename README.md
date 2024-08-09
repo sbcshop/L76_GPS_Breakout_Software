@@ -1,7 +1,8 @@
 # L76_GPS_Breakout_Software
 
-This Github provides a getting started guide and other working details for the L76 GPS module Breakout.
+The L76K GPS breakout board is a compact, high-performance GNSS module designed to provide precise and reliable positioning. It supports multiple satellite systems, including GPS, BeiDou, GLONASS, and QZSS, ensuring comprehensive coverage and accuracy. The breakout board offers flexible interfacing options, including direct access via onboard USB to TTL or through a TTL breakout header, making it ideal for a wide range of applications, from navigation and asset tracking to research and educational projects.
 
+This Github provides a getting started guide and other working details for the L76 GPS module Breakout.
 
 ### Features:
 - Breakout for L76K GNSS module which supports GPS, BeiDou, GLONASS, and QZSS for effective navigation
@@ -95,7 +96,7 @@ You have two options to use L76 GPS breakout
   
 - Once you are done with connection, now you can try gps examples available on Trekko Github => [Demo_GPS.py](https://github.com/sbcshop/Trekko_Software/blob/main/examples/Demo_GPS.py)
 - Make sure to save library file [trekkoGPS.py](https://github.com/sbcshop/Trekko_Software/blob/main/examples/trekkoGPS.py) to your Pico/Pico W
-- Everything all set then you can run script through IDE or save as main.py to your pico 
+- Everything all set then you can run script through IDE or save as main.py to your pico. To understand working with Thonny IDE for Pico, checkout Trekko [Github Here](https://github.com/sbcshop/Trekko_Software#2-running-first-program) 
 
 
 #### Interfacing Breakout with Raspberry Pi
@@ -103,12 +104,12 @@ You have two options to use L76 GPS breakout
     
   | Raspberry Pi | L76 Breakout | Function |
   |---|---|---|
-  |GP4 (TXD1) | RX | Serial UART connection |
-  |GP5 (RXD1) | TX  | Serial UART connection |
+  |UART0 TX | RX | Serial UART connection |
+  |UART0 RX | TX  | Serial UART connection |
   |5V | 5V | Positive Supply connection |
   |GND | GND | Ground Supply connection |
 
-  Checkout [Github Here](https://github.com/sbcshop/GPS-Hat-for-Raspberry-Pi) for Working and Examples
+  Checkout [Github Here](https://github.com/sbcshop/GPS-Hat-for-Raspberry-Pi/tree/main#code) for Working examples.
 
 <!--
 #### Interfacing Breakout with Arduino 
@@ -123,10 +124,10 @@ You have two options to use L76 GPS breakout
 -->
 
 ## Resources
-  * [Schematic]()
-  * [Hardware Files]()
-  * [Step File]()
-  * [L76K GNSS Documents]()
+  * [Schematic](https://github.com/sbcshop/L76_GPS_Breakout_Hardware/blob/main/Design%20Data/Sch%20GPS%20L76K%20Breakout.pdf)
+  * [Hardware Files](https://github.com/sbcshop/L76_GPS_Breakout_Hardware)
+  * [Step File](https://github.com/sbcshop/L76_GPS_Breakout_Hardware/blob/main/Mechanical%20Data/GPS%20L76K.step)
+  * [L76K GNSS Documents](https://github.com/sbcshop/L76_GPS_Breakout_Software/tree/main/Documents)
 
 
 ## Related Products
