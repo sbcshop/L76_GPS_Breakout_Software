@@ -83,9 +83,21 @@ You have two options to use L76 GPS breakout
 - For using breakout with microcontrollers set selection option to UART using jumper as shown below,
   <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/uart_selection.jpg" width="389" height="275">
 
-#### Interfacing Breakout with Pico/Pico W
+#### Interfacing Breakout with Arduino 
 - Once you have set selection jumper properly for UART access, so now you can either use header or 5pin SH connector to interface with microcontroller
-- Follow below pin connection for interfacing breakout with Pico/Pico W microcontroller
+- We have used D7 and D8 digital pins of Arduino as SoftwareSerial, if you change make sure to update same in code as well.
+
+  | Arduino | L76 Breakout | Function |
+  |---|---|---|
+  |D8 (TX) | RX | Serial UART connection |
+  |D7 (RX) | TX  | Serial UART connection |
+  |5V | 5V | Positive Supply connection |
+  |GND | GND | Ground Supply connection |
+
+- Connection ready, download [Demo Arduino code](https://github.com/sbcshop/L76_GPS_Breakout_Software/tree/main/examples/L76K_GNSS_Demo) for test reading GPS location. 
+  
+#### Interfacing Breakout with Pico/Pico W
+- Follow below pin connection for interfacing breakout with Pico/Pico W microcontroller, again you can use either Header or SH breakout connector for interfacing.
     
   | Pico RP2040 | L76 Breakout | Function |
   |---|---|---|
@@ -110,18 +122,7 @@ You have two options to use L76 GPS breakout
     |GND | GND | Ground Supply connection |
 
   - Checkout [Github Here](https://github.com/sbcshop/GPS-Hat-for-Raspberry-Pi/tree/main#code) for Working examples.
-
-<!--
-#### Interfacing Breakout with Arduino 
-
-  | Arduino | L76 Breakout | Function |
-  |---|---|---|
-  |GP4 (TXD1) | RX | Serial UART connection |
-  |GP5 (RXD1) | TX  | Serial UART connection |
-  |5V | 5V | Positive Supply connection |
-  |GND | GND | Ground Supply connection |
   
--->
 
 ## Resources
   * [Schematic](https://github.com/sbcshop/L76_GPS_Breakout_Hardware/blob/main/Design%20Data/Sch%20GPS%20L76K%20Breakout.pdf)
