@@ -78,8 +78,12 @@ You have two options to use L76 GPS breakout
 
 
 - You can even use UCenter software for indepth analysis, which you can download from [official site here](https://www.u-blox.com/en/product/u-center)
-  
+
+  u-center view
   <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/ucenter_view.jpg" width="" height="">
+
+  u-center2 view
+  <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/ucenter2_view.gif" width="" height="">
 
   **Note**: _You may face issue getting location indoor due to satellite search, place GPS antenna outdoor._  
   
