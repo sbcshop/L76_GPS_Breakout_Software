@@ -58,7 +58,7 @@ You have two options to use L76 GPS breakout
 
   <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/usb_selection.jpg" width="389" height="275">
 
-- Now you will see device listed with COM port you can checkout in device manager
+- Now you will see device listed with COM port you can checkout in device manager, If not listed meaning CH340 driver missing. To install driver check out [CH340 Driver Installation Manual Guide](https://github.com/sbcshop/NFC_Module/blob/main/documents/CH340%20Driver%20installation%20steps.pdf).
   
   <img src="https://github.com/sbcshop/L76_GPS_Breakout_Software/blob/main/images/device_manager_comport.jpg" width="583" height="426">
 
